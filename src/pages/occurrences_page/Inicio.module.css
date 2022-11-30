@@ -1,0 +1,123 @@
+.principal{
+  margin-top: 8%;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+.principal h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+.principal h2 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .botao{
+    background-color: #f1a014;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 27px;
+}
+
+
+.botao:hover{
+    color: #ffdf95;
+}
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .flex > div {
+    flex: 1 1 200px;
+  }
+
+  .img {
+    width: 30px;
+  }
+
+  .containerQuadro {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+  }
+
+  .flexFooter {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .flexFooter > div {
+    flex: 1 1 200px;
+  }
+
+  .contentTable {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-size: 0.9em;
+      width: 70%;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .contentTable thead tr {
+      background-color: #ffffff;
+      color: black;
+      text-align: left;
+      font-weight: bold;
+  }
+
+  .contentTable th,
+  .contentTable td {
+      padding: 10px 90px;
+  }
+
+  .contentTable tbody tr {
+    border-bottom: 5px solid #ffffff;
+  }
+
+  .contentTable tbody tr {
+    background-color: #FFD7BA;
+  }
+
+  .contentTable tbody tr:nth-of-type {
+    border-bottom: 2px solid #009829;
+  }
+
+  .contentTable tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+ 
+@media (max-width: 1100px) {
+    .posts {
+        margin-top: 0;
+        padding: 2rem 1.5rem 3.625rem;
+    }
+}
+ 
+@media (max-width: 744px) {
+    .posts {
+        padding: 2rem 1rem 3rem;
+    }
+}

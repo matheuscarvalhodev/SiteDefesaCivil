@@ -1,0 +1,81 @@
+.container{
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    display: grid;
+    justify-content: center;
+    background-color: #f1a014;
+    border-radius: 10px;
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+    margin: 150px auto;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+.loginformtitle {
+    font-family: Nunito, sans-serif;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+.loginformthead {
+    font-family: Nunito, sans-serif;
+    color: black;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input {
+    background: #fff;
+    cursor: pointer;
+    color:#000000;
+    width: 60%;
+}  
+.inputSenha {
+    background: #fff;
+    cursor: pointer;
+    color:#000000;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}  
+
+.loginbtn {
+    width: 100px;
+    transition: 0.2s;
+    font-weight: bold;
+    z-index: 3;
+
+}
+
+.input input {
+    border-radius: 40px;
+    transition: 0.2s;
+
+}
+
+
+.loginbtn:focus,
+.loginbtn:hover {
+    background: #fff;
+    cursor: pointer;
+    color: var(--green-color);
+    text-transform: uppercase;
+    border: 5px solid var(--green-color);
+    transition: ease-in-out 0.2s;
+}
+
+.input input:focus {
+    border-radius: 40px;
+    transition: 0.2s;
+
+}

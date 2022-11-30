@@ -1,0 +1,146 @@
+.header{
+    margin-top: 20px;
+}
+.body{
+    height: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 60px;
+}
+
+.logo{
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 80px;
+    margin-left: 80px;
+    opacity : 0.2;
+}
+
+.botao{
+    background-color: #f1a014;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 27px;
+}
+
+.botao:hover{
+    color: #ffdf95;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.container{
+    text-align: left;
+    padding: 32px;
+    background-color: #f1c373;
+    border-radius: 10px;
+    margin: 30px 0;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    max-width: 50%;
+    width: 100%;
+    margin-bottom: 80px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-bottom: 4px solid #f1a014;
+}
+
+h2{
+    font-size: 1.2rem;
+
+}
+h3{
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, sans-serif;
+    text-align: justify;
+}
+
+.descricao{
+    border: 2px solid #f1a014;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.imagem{
+    text-align: center;
+}
+
+.imagem img{
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+@media (max-width:900px) {
+    .info{
+        display: grid;
+    }
+    .info h2{
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .info h3{
+        margin-top: 0;
+        padding: 0;
+    }
+    .botao{
+        align-content: center;
+    }
+}
+
+@media print{
+    .principal{
+        margin-top: 0;
+        top: 0;
+    }
+    .cabecalho{
+        display:none;
+    }
+    .rodape{
+        display: none;
+    }
+    .header{
+        margin-top: 0;
+    }
+    .titulo{
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 0;
+    }
+    .container{
+        max-width: 90%;
+        border-radius: 0;
+        box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+        box-sizing: border-box;
+    }
+    .botao{
+        display:none;
+    }
+    .logo{
+        width: 20%;
+        top: 0;
+        right: 0;
+    }
+    h2{
+        font-size: 0.9rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    .imagem img{
+        width: 40%;
+    }
+}

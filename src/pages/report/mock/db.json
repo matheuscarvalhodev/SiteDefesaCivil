@@ -1,0 +1,12 @@
+{
+  "ZonaSelect": [
+    {
+      "value": "Urbana",
+      "label": "Urbana"
+    },
+    {
+      "value": "Rural",
+      "label": "Rural"
+    }
+  ]
+}
