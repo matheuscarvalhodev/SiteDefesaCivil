@@ -1,16 +1,16 @@
 import NaoEncontrada from "pages/NaoEncontrada";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomeInitial from "pages/home_initial";
-import Login from "pages/login";
-import NewsRegister from "pages/news_register";
-import Ocurrences from "pages/occurrences_page";
+import HomeInitial from "pages/PaginaInicial";
+import Login from "pages/Login";
+import NewsRegister from "pages/Cadastro";
+import Ocurrences from "pages/OcorrenciaLista";
 import DetalheOcorrencia from "pages/DetalheOcorrencia";
-import Report from "pages/report";
-import CadastroNoticia from "pages/cadastroNoticia/CadastroNoticia";
+import Report from "pages/Relatorio";
+import CadastroNoticia from "pages/CadastroNoticia/CadastroNoticia";
 import Noticia from "pages/Noticia";
-import SimpleLineChart from "pages/estatisticaGrafico";
-import VerificationEmail from "pages/recover_password/verification_email";
-import RedefinitionPassword from "pages/recover_password/redefinition_password";
+import SimpleLineChart from "pages/EstatisticaGrafico";
+import VerificationEmail from "pages/RecuperaSenha/verification_email";
+import RedefinitionPassword from "pages/RecuperaSenha/redefinition_password";
 
 
 function AppRoutes() {
@@ -23,8 +23,8 @@ function AppRoutes() {
         <Route path="/news" element={<CadastroNoticia/>}/>
         <Route path="/news/:id" element={<Noticia/>}/>
         <Route path="/ocurrences" element={<Ocurrences/>}/>
-        <Route path="/report" element={<Report/>}/>
         <Route path="/ocurrences/:id" element={<DetalheOcorrencia/>}/>
+        <Route path="/report" element={<Report/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/new_register" element={<NewsRegister/>}/>
         <Route path="/recover-password" element={<VerificationEmail/>}/>

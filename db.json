@@ -9,16 +9,6 @@
       "nome_autor_crime": "Matheus Carvalho",
       "local_ocorrido": "Avenida Independencia, 1742, Fátima",
       "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      "id": 2,
-      "tipo_ocorrencia": "Alagamento",
-      "data_ocorrido": "26/11/2022",
-      "hora_ocorrido": "16:00:00",
-      "anexo": "https://firebasestorage.googleapis.com/v0/b/reactuploads-382c9.appspot.com/o/images%2FCapa257.jpg?alt=media&token=bc897f37-c4f9-4ed0-9f4a-18b0ddd91362",
-      "nome_autor_crime": "Crystian Cativo",
-      "local_ocorrido": "Avenida Independencia, 1742, Fátima",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   ],
   "noticias": [
@@ -35,20 +25,6 @@
       "urlImagem": "https://firebasestorage.googleapis.com/v0/b/reactuploads-382c9.appspot.com/o/images%2Fup_ag_28123_70479947-604d-f30e-ac5e-2dcaec69c4fb.jpg?alt=media&token=aa78bdab-f4bb-41be-9ea3-b006b807216f",
       "dataPublicacao": "2022-11-30T05:29:24.945Z",
       "id": 2
-    },
-    {
-      "titulo": "Governo municipal se reúne com defesa civil estadual",
-      "corpo": "O Corpo de Bombeiros Militar do Pará, por meio da Coordenadoria Estadual de Defesa Civil, se reuniu na sede do Poder Executivo Municipal com representante da secretaria de Segurança Pública e Defesa Social, jurídico da Prefeitura de Oriximiná, para discutir ações referentes à decretação de emergência do município.\n\nO foco do encontro foi viabilizar subsídios junto ao Governo do Estado e Federal, como ajuda humanitária para as pessoas afetadas pelas inundações no município de Oriximiná. \"O município de Oriximiná já está em situação de emergência, ele está habilitado a receber alguns recursos por parte tanto do governo estadual, quanto o governo federal. Já está homologado então com isso ele está habilitado a receber ajuda humanitária e inclusive já foi pedido cesta de alimentos, em torno de 800 por parte da gestão Municipal. Mas também o município fica habilitado a receber água potável, se preciso for kit higiene, kit dormitório, Programa sua casa, Programa Recomeçar, combustível e diversos outros subsídios, que podem estar sendo atendidos caso o município venha a precisar e nos solicitar\", ressalta Major Bruno.",
-      "urlImagem": "https://firebasestorage.googleapis.com/v0/b/reactuploads-382c9.appspot.com/o/images%2FCapa234.jpg?alt=media&token=8a91f6b5-e2c8-4257-ac43-75d6c306d943",
-      "dataPublicacao": "2022-11-30T05:30:05.059Z",
-      "id": 3
-    },
-    {
-      "titulo": "Defesa Civil municipal monitora danos após fortes chuvas",
-      "corpo": "Conforme o Mapa Estações do Sistema Hidro - Telemetria, de 02h45min às 06h30 da manhã desta segunda-feira dia 21, choveu 56,20 mm de água. E por conta disso, ocasionou danos estruturais em vias públicas do município, bem como, prejuízos à população.\n\nUma equipe do governo municipal, comandada pela Secretaria de Desenvolvimento Urbano e de Assistência Social, Coordenadoria de habitação e Defesa Civil, monitoram os estragos causados pelas fortes chuvas e fazem o levantamento de famílias afetadas por desastres naturais.\n\nEm alguns pontos da zona urbana foram registrados alagamentos em casas. Segundo a defesa civil do município, o despejo de entulhos, lixo em locais inadequados, com o volume de água causam entupimento de bueiros. Equipes trabalharam para realizar a limpeza das caixas de água e da lama que ficou acumulada nos quintais das residências.\n\nA coordenadoria de Habitação e a Secretaria de Assistência fazem o levantamento de famílias que precisam de ajuda, assim como, daquelas pessoas que eventualmente precisem de um auxílio maior para serem assistidas por algum programa socioassistencial",
-      "urlImagem": "https://firebasestorage.googleapis.com/v0/b/reactuploads-382c9.appspot.com/o/images%2FCapa257.jpg?alt=media&token=bc897f37-c4f9-4ed0-9f4a-18b0ddd91362",
-      "dataPublicacao": "2022-11-30T13:05:50.346Z",
-      "id": 4
     }
   ],
   "estatistica":{
