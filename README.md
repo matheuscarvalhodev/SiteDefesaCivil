@@ -9,15 +9,25 @@ O sistema está na fase inicial (fase 0), porém com bastante espaço para melho
 ## Colaboradores
 
 [Matheus Carvalho](https://www.linkedin.com/in/matheus-carvalho-dev/)
+
 [Luciana Sousa](https://www.linkedin.com/in/luciana-sousa-93a510243/)
+
 [Crystian Cativo](https://www.linkedin.com/in/crystian-printes-b052691b7/)
+
 [Marcos Prints](https://www.linkedin.com/in/mvprintes/)
+
 [Carlos Sarubi](https://www.linkedin.com/in/carlos-sarubi/)
+
 [Izabela Carvalho](https://www.linkedin.com/in/izabelaccarvalho/)
+
 [Raiane Coimbra](https://www.linkedin.com/in/raianecoimbra/)
+
 [Francisco Marconi](https://www.linkedin.com/in/francisco-marconi-257a93252/)
+
 [Lucas Eleutério]
+
 [Kairo Hudson]
+
 
 ## Versel
 
@@ -80,19 +90,27 @@ Ou, simplesmente rode o arquivo `db.json` que está dentro do projeto. Os valore
 Finalmente, para rodar o arquivo db.json, e fazê-lo funcionar como uma fake API, rode o comando `json-server --watch db.json` no CMD ou Powershell no mesmo local em que se encontra o arquivo db.json, e verá o json-server criar um servidor que funcionará como uma API, podendo usar varios tipos de requests (GET, PUT, DELETE, POST, PATCH). Para saber mais, [clique aqui](https://www.fabricadecodigo.com/json-server/)
 
 `http://localhost:3000`
+
 `http://localhost:3000/ocorrencias`
+
 `http://localhost:3000/noticias`
+
 `http://localhost:3000/estatistica`
 
-## Sistema Web
+
+### Sistema Web
 
 Após instalar e colocar para rodar a Fake Api através do json-server. Acesse esse [link](https://defesa-civil.vercel.app/), que te levará para o nosso projeto hospedado no Vercel. Com a API rodando, você poderar acessar as páginas criadas. Por ser um projeto inicial e utilizar um Fake API para funcionar, o sistema está "funcionando" apenas para visualização. Porém, futuramente, o projeto estará recebendo atualização para torná-lo mais completo e ser considerado como um produto finalizado.
 Caso queira rodar localmente, deverá instalar as bibliotecas que foram utilizadas no projeto, para isso, basta rodar no prompt de comando `npm install`. Após isso, ao rodar o comando `npm start`, o servidor NodeJs abrirá um browser com a rota [http://localhost:3000](http://localhost:3000). Caso o Json-Serve esteja rodando antes disso, havera um conflito de porta, porém o Node perguntará se deseja rodar com outra porta, basta colocar `y` no prompt de comando, e ele rodará o sistema web na porta [http://localhost:3001](http://localhost:3001). Ou, caso deseje construir o servidor do json-serve em outra rota, basta rodar o comando `npm run server` no mesmo local que o arquivo db.json, que ele irar rodar na porta 5000:
 
 `http://localhost:5000`
+
 `http://localhost:5000/ocorrencias`
+
 `http://localhost:5000/noticias`
+
 `http://localhost:5000/estatistica`
+
 
 
 ## Leia mais sobre React, Axios e Json-Server
