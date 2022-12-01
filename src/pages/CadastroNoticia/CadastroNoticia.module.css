@@ -1,0 +1,65 @@
+.principal{
+
+    width: 70%;
+    margin: 100px auto;
+}
+.principal button{
+    float: right;
+    margin-right: 70px;
+}
+.titulo{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.titulo input{
+    width: 70%;
+}
+.corpo{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.corpo textarea{
+    width: 70%;
+}
+.tituloCadastroNoticia {
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.inputImg{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+
+@media screen and (max-width: 575px) {
+    .tituloCadastroNoticia {
+        padding: 5px;
+        font-size: 20px;
+        color: black;
+    }
+    .corpo{
+        padding-bottom: 10px;
+    }
+    .tituloNoticia {
+        font-size: 15px;
+        width: 100%;
+        text-align:center;
+    }
+    .botaoSubmit{
+        padding-top: 10px;
+        text-align: center;
+    }
+    .arquivoCampo{
+        text-align: center;
+        background: #F8F9FA;
+    }
+}
