@@ -24,7 +24,7 @@ O sistema está na fase inicial (fase 0), porém com bastante espaço para melho
 
 [Francisco Marconi](https://www.linkedin.com/in/francisco-marconi-257a93252/)
 
-[Lucas Eleutério]
+[Lucas Eleutério](linkedin.com/in/lucas-eleutério-1a9759254)
 
 [Kairo Hudson]
 
