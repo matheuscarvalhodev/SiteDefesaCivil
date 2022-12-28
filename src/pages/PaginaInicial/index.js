@@ -13,21 +13,22 @@ import {
 } from "reactstrap";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { noticias } from "../../dados";
 
 export default function Home_initial() {
-  const [noticia, setOcorrencia] = useState(null);
+  // const [noticia, setOcorrencia] = useState(null);
 
-    useEffect(() => {
-        axios.get(`http://localhost:3000/noticias`)
-           .then((response) => {
-             setOcorrencia(response.data)
-          })
-          .catch((err) => {
-            console.error("ops! ocorreu um erro : " + err);
-          });
-      }, []);
+  //   useEffect(() => {
+  //       axios.get(`http://localhost:3000/noticias`)
+  //          .then((response) => {
+  //            setOcorrencia(response.data)
+  //         })
+  //         .catch((err) => {
+  //           console.error("ops! ocorreu um erro : " + err);
+  //         });
+  //     }, []);
 
-      if (!noticia) return null;
+  //     if (!noticia) return null;
   return (
     <>
       <SideNavBar cor={"#f1a014"} titulo={"Defesa Civil"}/>
@@ -38,7 +39,7 @@ export default function Home_initial() {
             <h3 className="mb-5 text-center text-decoration-none">Ultimas Noticias</h3>
             <Card className="mb-5">
               <ListGroup flush>
-                {noticia.map(noticias => (
+                {noticias.map(noticias => (
                     <ListGroupItem><a href={`news/${noticias.id}`}>{noticias.titulo}</a></ListGroupItem>
                 ))}
                 

@@ -6,6 +6,7 @@
 .principal button{
     float: right;
     margin-right: 70px;
+    margin-bottom: 100px;
 }
 .titulo{
     display: flex;

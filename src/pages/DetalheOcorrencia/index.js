@@ -7,26 +7,27 @@ import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import NaoEncontrada from "pages/NaoEncontrada";
 import Rodape from "componentes/Rodape";
+import { ocorrencia } from '../../dados';
 
 const DetalheOcorrencia = () => {
 
     const {id} = useParams();
 
-    const [ocorrencia, setOcorrencia] = useState(null);
+    //const [ocorrencia, setOcorrencia] = useState(null);
 
-    useEffect(() => {
-        const api = async ()=>{
-            await axios.get(`http://localhost:3000/ocorrencias?id=${id}`)
-           .then((response) => {
-             setOcorrencia(response.data)
-          })
-          .catch((err) => {
-            <NaoEncontrada erro={"500"} texto={"Houvemos um problema no servidor"}/>;
-          });
-        }
-        api();
-      }, [id]);
-      if (!ocorrencia) return null;
+    // useEffect(() => {
+    //     const api = async ()=>{
+    //         await axios.get(`http://localhost:3000/ocorrencias?id=${id}`)
+    //        .then((response) => {
+    //          setOcorrencia(response.data)
+    //       })
+    //       .catch((err) => {
+    //         <NaoEncontrada erro={"500"} texto={"Houvemos um problema no servidor"}/>;
+    //       });
+    //     }
+    //     api();
+    //   }, [id]);
+    //   if (!ocorrencia) return null;
 
     return(
         <div className={styles.principal}>
@@ -43,23 +44,23 @@ const DetalheOcorrencia = () => {
                     <>
                     <div className={styles.info}>
                         <h2>Tipo de ocorrência: </h2>
-                        <h3 key={dado.nome}> {dado.tipo_ocorrencia} </h3>
+                        <h3 key={id}> {dado.tipo_ocorrencia} </h3>
                     </div>
                     <div className={styles.info}>
                         <h2>Data do ocorrido: </h2>
-                        <h3 key={dado.nome}> {dado.data_ocorrido} </h3>
+                        <h3 key={dado.id}> {dado.data_ocorrido} </h3>
                     </div>
                     <div className={styles.info}>
                         <h2>Hora do ocorrido: </h2>
-                        <h3 key={dado.nome}> {dado.hora_ocorrido} </h3>
+                        <h3 key={dado.id}> {dado.hora_ocorrido} </h3>
                     </div>
                     <div className={styles.info}>
                         <h2>Nome do provavel autor do dano: </h2>
-                        <h3 key={dado.nome}> {dado.nome_autor_crime} </h3>
+                        <h3 key={dado.id}> {dado.nome_autor_crime} </h3>
                     </div>
                     <div className={styles.info}>
                         <h2>Local do ocorrido: </h2>
-                        <h3 key={dado.nome}> {dado.local_ocorrido} </h3>
+                        <h3 key={dado.id}> {dado.local_ocorrido} </h3>
                     </div>
                     <div className={styles.imagem}>
                         <h2>Anexo</h2>
@@ -67,7 +68,7 @@ const DetalheOcorrencia = () => {
                     </div>
                     <div className={styles.box}>
                         <h2>Descrição do fato</h2>
-                        <h3 key={dado.nome} className={styles.descricao}> {dado.descricao} </h3>
+                        <h3 key={dado.id} className={styles.descricao}> {dado.descricao} </h3>
                     </div>
                     </>
                 ))}

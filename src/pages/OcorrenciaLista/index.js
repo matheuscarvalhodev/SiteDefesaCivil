@@ -5,24 +5,25 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 import Rodape from "componentes/Rodape";
+import { ocorrencia } from 'dados';
 
 export default function Ocurrences() {
 
-    const [ocorrencia, setOcorrencia] = useState(null);
+    //const [ocorrencia, setOcorrencia] = useState(null);
     const [tamanho, setTamanho] = useState(null);
 
-    useEffect(() => {
-        axios.get(`http://localhost:3000/ocorrencias`)
-           .then((response) => {
-             setOcorrencia(response.data)
-             setTamanho(response.data.length)
-          })
-          .catch((err) => {
-            console.error("ops! ocorreu um erro : " + err);
-          });
-      }, []);
+    // useEffect(() => {
+    //     axios.get(`http://localhost:3000/ocorrencias`)
+    //        .then((response) => {
+    //          setOcorrencia(response.data)
+    //          setTamanho(response.data.length)
+    //       })
+    //       .catch((err) => {
+    //         console.error("ops! ocorreu um erro : " + err);
+    //       });
+    //   }, []);
 
-      if (!ocorrencia) return null;
+    //   if (!ocorrencia) return null;
       
 
     return (

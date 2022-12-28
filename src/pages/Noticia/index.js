@@ -7,30 +7,31 @@ import NaoEncontrada from "pages/NaoEncontrada";
 import Button from "@mui/material/Button";
 import { useNavigate } from 'react-router-dom';
 import Rodape from "componentes/Rodape";
+import { noticias } from '../../dados';
 
 const Noticia = ()=>{
-    const navegar = useNavigate();
-    const id = useParams();
-    const [noticia, setOcorrencia] = useState(null);
+     const navegar = useNavigate();
+    // const id = useParams();
+    // const [noticia, setOcorrencia] = useState(null);
 
-    useEffect(() => {
-        const api = async ()=>{
-            await axios.get(`http://localhost:3000/noticias?id=${id.id}`)
-           .then((response) => {
-             setOcorrencia(response.data)
-          })
-          .catch((err) => {
-            <NaoEncontrada erro={"500"} texto={"Houvemos um problema no servidor"}/>;
-          });
-        }
-        api();
-      }, [id]);
-      if (!noticia) return null;
+    // useEffect(() => {
+    //     const api = async ()=>{
+    //         await axios.get(`http://localhost:3000/noticias?id=${id.id}`)
+    //        .then((response) => {
+    //          setOcorrencia(response.data)
+    //       })
+    //       .catch((err) => {
+    //         <NaoEncontrada erro={"500"} texto={"Houvemos um problema no servidor"}/>;
+    //       });
+    //     }
+    //     api();
+    //   }, [id]);
+    //   if (!noticia) return null;
     return(
         <div>
             <SideNavBar cor={"#f1a014"} titulo={"Defesa Civil"}/>
             <div className={styles.principal}>
-                {noticia.map(
+                {noticias.map(
                     dado => (
                         <div className={styles.corpoNoticia}>
                             <h1 className={styles.titulo}>{dado.titulo}</h1>

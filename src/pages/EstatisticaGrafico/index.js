@@ -13,23 +13,24 @@ import Rodape from "componentes/Rodape";
 import styles from "./estatisticaGrafico.module.css";
 import axios from "axios";
 import NaoEncontrada from "pages/NaoEncontrada";
+import { estatistica } from '../../dados';
 
 function SimpleLineChart(){
-    const [estatistica, setOcorrencia] = useState(null);
+    // const [estatistica, setOcorrencia] = useState(null);
 
-    useEffect(() => {
-        const api = async ()=>{
-            await axios.get(`http://localhost:3000/estatistica`)
-           .then((response) => {
-             setOcorrencia(response.data.dados)
-          })
-          .catch((err) => {
-            <NaoEncontrada erro={"500"} texto={"Houvemos um problema no servidor"}/>;
-          });
-        }
-        api();
-      }, []);
-      if (!estatistica) return null;
+    // useEffect(() => {
+    //     const api = async ()=>{
+    //         await axios.get(`http://localhost:3000/estatistica`)
+    //        .then((response) => {
+    //          setOcorrencia(response.data.dados)
+    //       })
+    //       .catch((err) => {
+    //         <NaoEncontrada erro={"500"} texto={"Houvemos um problema no servidor"}/>;
+    //       });
+    //     }
+    //     api();
+    //   }, []);
+    //   if (!estatistica) return null;
 
     return (
       <>
@@ -41,7 +42,7 @@ function SimpleLineChart(){
               <LineChart
                 width={600}
                 height={300}
-                data={estatistica}
+                data={estatistica.dados}
                 margin={{top: 5, right: 30, left: 20, bottom: 5}}
                 >
                 <Line
